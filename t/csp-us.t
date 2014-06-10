@@ -5,7 +5,7 @@ use warnings;
 use diagnostics;
 use Test::NoWarnings;
 
-use Test::More tests => 10;
+use Test::More tests => 13;
 BEGIN {
 	use_ok('CGI::Untaint');
 	use_ok('CGI::Untaint::CountyStateProvince::US');
@@ -23,9 +23,11 @@ my $vars = {
 
 my $untainter = CGI::Untaint->new($vars);
 my $c = $untainter->extract(-as_CountyStateProvince => 'state1');
+ok(defined($c));
 ok($c eq 'PA', 'PA');
 
 $c = $untainter->extract(-as_CountyStateProvince => 'state2');
+ok(defined($c));
 ok($c eq 'WV', 'West Virginia');
 
 $c = $untainter->extract(-as_CountyStateProvince => 'state3');
@@ -38,6 +40,7 @@ $c = $untainter->extract(-as_CountyStateProvince => 'state5');
 ok(!defined($c), '*&^');
 
 $c = $untainter->extract(-as_CountyStateProvince => 'state6');
+ok(defined($c));
 ok($c eq 'MA', 'Ma');
 
 $c = $untainter->extract(-as_CountyStateProvince => 'state7');
