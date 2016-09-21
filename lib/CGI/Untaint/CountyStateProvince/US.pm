@@ -53,7 +53,7 @@ sub is_valid {
 
 	my $value = uc($self->value);
 
-	if($value =~ /([A-Z\s]+)/) {
+	if($value =~ /([A-Z][A-Z\s]+)/) {
 		$value = $1;
 	} else {
 		return 0;
