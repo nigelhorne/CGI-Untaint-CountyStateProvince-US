@@ -1,6 +1,6 @@
 Revision history for CGI-Untaint-CountyStateProvince-US
 
-0.03
+0.03	Mon Oct 16 14:22:09 EDT 2017
 	Bump minimum version of Locale::SubCountry to 1.47
 	Corrected some variable names and the contact e-mail address.
 	We don't need Test::Kwalitee to build
