@@ -3,8 +3,7 @@ ignore.txt
 lib/CGI/Untaint/CountyStateProvince/US.pm
 LICENSE
 Makefile.PL
-MANIFEST
-META.yml			Module meta-data (added by MakeMaker)
+MANIFEST			This list of files
 README
 README.md
 t/00-load.t
