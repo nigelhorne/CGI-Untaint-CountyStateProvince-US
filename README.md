@@ -9,7 +9,7 @@ CGI::Untaint::CountyStateProvince::US - Add U.S. states to CGI::Untaint::CountyS
 
 # VERSION
 
-Version 0.03
+Version 0.04
 
 # SYNOPSIS
 
