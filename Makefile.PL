@@ -21,6 +21,21 @@ WriteMakefile(
 	'Locale::SubCountry' => 1.47,	# Needs new() on two character codes
 	'Test::NoWarnings' => 0,
 	# 'Test::Kwalitee' => 0,
+    }, META_MERGE		=> {
+	'meta-spec' => { version => 2 },
+	resources => {
+		repository => {
+			type => 'git',
+			url => 'git://github.com/nigelhorne/CGI-Untaint-CountyStateProvince-US.git',
+			web => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvince-US',
+			repository => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvince-US',
+		}, bugtracker => {
+			# web => 'https://rt.cpan.org/Public/Dist/Display.html?Name=CGI-Untaint-CountyStateProvince-US',
+			web => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvince-US/issues',
+			url => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvince-US/issues',
+			mailto => 'bug-CGI-Untaint-CountyStateProvince-US@rt.cpan.org'
+		}
+	},
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'CGI-Untaint-CountyStateProvince-US*' },
