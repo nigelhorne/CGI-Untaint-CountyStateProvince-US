@@ -1,5 +1,8 @@
 Revision history for CGI-Untaint-CountyStateProvince-US
 
+0.05
+	Added a work around for RT#105917
+
 0.04	Mon Nov 23 08:38:22 EST 2020
 	Fix http://www.cpantesters.org/cpan/report/a376e91c-b37f-11e7-bcf2-71d4db1c1d4b
 	Fix RT#108877
