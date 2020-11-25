@@ -26,14 +26,14 @@ WriteMakefile(
 	resources => {
 		repository => {
 			type => 'git',
-			url => 'git://github.com/nigelhorne/CGI-Untaint-CountyStateProvinvce.git',
-			web => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvinvce',
-			repository => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvinvce',
+			url => 'git://github.com/nigelhorne/CGI-Untaint-CountyStateProvince.git',
+			web => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvince',
+			repository => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvince',
 		}, bugtracker => {
-			# web => 'https://rt.cpan.org/Public/Dist/Display.html?Name=CGI-Untaint-CountyStateProvinvce',
-			web => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvinvce/issues',
-			url => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvinvce/issues',
-			mailto => 'bug-CGI-Untaint-CountyStateProvinvce@rt.cpan.org'
+			# web => 'https://rt.cpan.org/Public/Dist/Display.html?Name=CGI-Untaint-CountyStateProvince-US',
+			web => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvince-US/issues',
+			url => 'https://github.com/nigelhorne/CGI-Untaint-CountyStateProvince-US/issues',
+			mailto => 'bug-CGI-Untaint-CountyStateProvince-US@rt.cpan.org'
 		}
 	},
     },
