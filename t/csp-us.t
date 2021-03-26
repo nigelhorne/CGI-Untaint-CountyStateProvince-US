@@ -5,7 +5,7 @@ use warnings;
 use diagnostics;
 use Test::NoWarnings;
 
-use Test::More tests => 13;
+use Test::Most tests => 13;
 BEGIN {
 	use_ok('CGI::Untaint');
 	use_ok('CGI::Untaint::CountyStateProvince::US');
