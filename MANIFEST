@@ -9,10 +9,12 @@ README
 README.md
 t/00-load.t
 t/boiler.t
+t/comment-spelling.t
 t/coverage.t
 t/critic.t
 t/csp-us.t
 t/cv.t
+t/eol.t
 t/gv.t
 t/kwalitee.t
 t/links.t
@@ -22,10 +24,10 @@ t/no404s.t
 t/noplan.t
 t/pod-cm.t
 t/pod.t
+t/pod_spelling.t
 t/port.t
 t/prereq.t
 t/snippets.t
-t/spelling.t
 t/taint.t
 t/untaint.t
 t/vars.t
