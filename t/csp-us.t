@@ -45,4 +45,3 @@ ok($c eq 'MA', 'Ma');
 
 $c = $untainter->extract(-as_CountyStateProvince => 'state7');
 ok(!defined($c), 'ZZ');
-

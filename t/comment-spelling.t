@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Test::Most;
 
-if($ENV{AUTHOR_TESTING} ) {
+if($ENV{'AUTHOR_TESTING'} ) {
 	eval 'use Test::Spelling::Comment 0.002';
 	if($@) {
 		plan(skip_all => 'Test::Spelling::Comment required for testing comment spelling');
@@ -17,3 +17,6 @@ if($ENV{AUTHOR_TESTING} ) {
 }
 
 __DATA__
+CountyStateProvince
+Detaintify
+qw
