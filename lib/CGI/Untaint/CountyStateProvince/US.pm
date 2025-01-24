@@ -51,7 +51,8 @@ given state.  See CGI::Untaint::is_valid.
 sub is_valid {
 	my $self = shift;
 
-	my $value = uc($self->value);
+	my $value = uc($self->value());
+	$value =~ s/^\s+|\s+$//g;	# Trim whitespace
 
 	if($value =~ /([A-Z][A-Z\s]+)/) {
 		$value = $1;
@@ -131,7 +132,6 @@ You can find documentation for this module with the perldoc command.
 
     perldoc CGI::Untaint::CountyStateProvince::US
 
-
 You can also look for information at:
 
 =over 4
@@ -139,10 +139,6 @@ You can also look for information at:
 =item * RT: CPAN's request tracker
 
 L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=CGI-Untaint-CountyStateProvince-US>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/CGI-Untaint-CountyStateProvince-US>
 
 =item * Search CPAN
 
@@ -152,10 +148,9 @@ L<http://search.cpan.org/dist/CGI-Untaint-CountyStateProvince-US>
 
 =head1 ACKNOWLEDGEMENTS
 
-
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012-2019 Nigel Horne.
+Copyright 2012-2025 Nigel Horne.
 
 This program is released under the following licence: GPL2
 
