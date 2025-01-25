@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-use ExtUtils::MakeMaker 6.64;	# 6.64 for TEST_REQUIRES
+use ExtUtils::MakeMaker 6.64;
 
 my $dist = {
 	COMPRESS => 'gzip -9f',	# Compress tarball using gzip
@@ -29,6 +29,7 @@ WriteMakefile(
     	'CGI' => 0,	# Workaround for RT#105917
 	'CGI::Untaint' => 0,
 	'CGI::Untaint::CountyStateProvince' => 0.04,
+	'ExtUtils::MakeMaker' => 6.64,	# 6.64 for TEST_REQUIRES
 	'Locale::SubCountry' => 1.47,	# Needs new() on two character codes
 	'Test::NoWarnings' => 0,
 	# 'Test::Kwalitee' => 0,
